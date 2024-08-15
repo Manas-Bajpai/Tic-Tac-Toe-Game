@@ -1,0 +1,92 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #cddddd;
+    text-align: center;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 40px;
+    color: blue;
+    margin-bottom: 30px;
+}
+
+.game {
+    height: 360px;
+    width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+
+.box {
+    height: 108px;
+    /* 18vmin */
+    width: 108px;
+    /* 18vmin */
+    border-radius: 1rem;
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 18px;
+    grid-row-gap: 22px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 48px;
+    /* 8vmin */
+    background-color: #c7e9ba;
+}
+
+/* Specific player colors */
+.box.playerO {
+    color: #0f3001;
+}
+
+.box.playerX {
+    color: rgb(26, 52, 222);
+}
+
+.box.winning {
+    background-color: yellow;
+}
+
+.reset-btn,
+.new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+.msg {
+    color: #ffffc7;
+    font-size: 30px;
+}
+
+.msg-container {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.hide {
+    display: none;
+}
